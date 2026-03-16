@@ -1,0 +1,759 @@
+/*
+  TIPOGRAPHY
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lacquer&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lacquer&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+/*
+    DESIGN CLASSES BEGIN                                 
+*/
+/* .row {
+  border: 1px solid green;
+}
+
+[class^="col-"] {
+  border: 1px solid red;
+} */
+
+/*
+    DESIGN CLASSES END
+*/
+
+
+/*
+    GENERAL STYLES
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+}
+
+blockquote {
+    font-weight: 300;
+    font-style: italic;
+}
+
+/*
+    SITE BRANDING
+*/
+.nostalgia-mobile-icon img {
+    width: 70px;
+}
+
+/*
+    HEADINGS & TITLES
+*/
+.nostalgia-site-icon {
+    text-align: center;
+}
+
+.nostalgia-site-icon img {
+    width: 75px;
+}
+
+.nostalgia-header {
+    background-color: #7d2158;
+}
+
+
+.nostalgia-site-title-text {
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 8em;
+    font-weight: 900;
+    color: #432E71;
+    position: absolute;
+    z-index: 1000;
+    left: 30%;
+    top: 20%;
+}
+
+.nostalgia-letter {
+    display: inline-block;
+    position: relative;
+    margin-right: 1em;
+    text-shadow: 10px 10px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nostalgia-letter::after {
+    content: '';
+    display: inline-block;
+    width: 112px;
+    height: 108px;
+    background-image: url(./assets/undertitle.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: -50px;
+    top: 70px;
+    z-index: -1;
+}
+
+.nostalgia-site-tagline-text {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 800;
+    color: #a0c9db;
+    text-shadow: 10px 10px 2px rgba(160, 201, 219, 0.25);
+    margin-top: 0.5em;
+}
+
+.nostalgia-logo {
+    background-color: #7d2158;
+}
+
+.nostalgia-branding {
+    background-color: #7d2158;
+}
+
+/*
+    SITE MENU
+*/
+.navbar-nostalgia {
+    position: sticky;
+    top: 0px;
+    margin-bottom: 4em;
+}
+
+.nostalgia-sidebar-container {
+    background-color: #7d2158;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.menu-item {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 1em;
+    margin-top: 2em;
+    border-bottom: 3px solid #b1b2b5;
+    transform: rotate(-30deg);
+}
+
+#menu-service li {
+    margin-top: inherit;
+}
+
+.menu-item:hover {
+    border-bottom: 3px solid #faf6f2;
+}
+
+.menu-item:hover a {
+    color: #b1b2b5;
+}
+
+a.nav-link, .menu-item a {
+    color: #faf6f2;
+}
+
+a.nav-link:hover {
+    color: #b1b2b5;
+}
+
+.navbar-nav .nav-link.active {
+    color: #f5b90a;
+}
+
+.current_page_item {
+    text-shadow: none;
+    text-align: right;
+}
+
+#sentinel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#backToTop {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #7d2158;
+    color: #faf6f2;
+    font-size: 1.5em;
+    border: none;
+    display: none; /* hidden on load */
+    z-index: 1030;
+}
+
+#backToTop:hover {
+    background-color: #7d2158;
+    color: #a0c9db;
+}
+
+/*
+    MAIN CONTENT
+*/
+.nostalgia-entry-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    /* font-style: italic; */
+    font-family: "Bodoni Moda", serif;
+    margin-top: 0;
+    margin-bottom: 1.5em;
+}
+
+.nostalgia-content {
+    padding: 0;
+}
+
+.nostalgia-nagel-wires {
+    display: block;
+    position: absolute;
+    width: 1100px;
+    height: 2000px;
+    background-image: url('./assets/nagel-cables.svg');
+    background-size: 1470px 1855px;
+    background-repeat: no-repeat;
+    background-position-x: -171px;
+    background-position-y: -40px;
+    pointer-events: none;    
+}
+
+.nostalgia-entry-content, .entry-footer {
+    margin-left: 5em;
+    margin-right: 5em;
+}
+
+.nostalgia-frontroll-entry-footer {
+    font-weight: 700;
+}
+
+.nostalgia-frontroll-entry-footer span {
+    display: block;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.nostalgia-frontroll-title {
+    font-size: 1.5em;
+}
+
+.origami-tags-list {
+    padding-left: 5px;
+}
+
+.origami-tags-list li {
+    display: inline-block;
+    font-weight: 700;
+    text-transform: uppercase;;
+    font-style: italic;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+    padding: 5px 20px 5px 15px;
+    clip-path: none;
+}
+
+.origami-tags-list li:hover {
+    background-image: url('./assets/tag.svg');
+    background-repeat: no-repeat;
+    background-position: 0px 5px;
+    background-size: contain;
+    background-color: transparent;
+    color: #000000;
+}
+
+.origami-tags-list li a:hover {
+    color: #000000;
+}
+
+.origami-tags-list li:hover a {
+    color: inherit;
+}
+
+
+.nostalgia-entry-meta {
+    float: inline-start;
+}
+
+.nostalgia-entry-social {
+    float: inline-end;
+    font-size: 2em;
+}
+
+.nostalgia-posted-on {
+    display: block;
+}
+
+/*
+    ACCESSIBILITY
+*/
+
+.accessibility-controls {
+    text-align: right;
+    margin-top: 1em;
+}
+
+.font-ctrl {
+  background-color: #7d2158;
+  color: #faf6f2;
+}
+
+.font-ctrl:hover {
+  color: #7d2158;
+  background-color: #faf6f2;  
+}
+
+.font-ctrl.magnified {
+  color: #7d2158;
+  background-color: #faf6f2;
+}
+
+/*
+    FRONTROLL nostalgia-content
+*/
+.nostalgia-blogroll {
+    margin-top: 6em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+}
+
+.nostalgiaroll-entry-content {
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+.nostalgia-frontroll-image img {
+    outline: 20px solid #000;
+    outline-offset: -20px;
+}
+
+article.nostalgia-frontroll {
+    margin-left: 1em;
+    margin-bottom: 2em;
+}
+
+.nostalgia-frontroll-image-caption {
+    background-color: #000;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    text-transform: uppercase;
+    font-family: "Bodoni Moda", serif;
+    text-align: center;
+}
+
+.nostalgia-frontroll-title a{
+    color: #ccc;
+}
+
+.nostalgia-frontroll-title a:hover {
+    color: #a0c9db;
+}
+
+/*
+    PORTFOLIO
+*/
+.nostalgia-portfolio {
+    margin-top: 2em;
+}
+
+.nostalgia-section-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    /* font-style: italic; */
+    font-family: "Bodoni Moda", serif;
+}
+
+.card-group {
+    justify-content: space-evenly;
+}
+
+
+/*
+    STATS CARD
+*/
+
+
+/*
+    TEAM CARDS
+*/
+.nostalgia-team-card {
+    margin-top: 6em;
+}
+
+.shodo-card {
+    max-width: 250px;
+    border: none;
+    margin-top: 2em;
+}
+
+.origami-card-image {
+    filter: contrast(1.5) saturate(1.8) hue-rotate(-20deg);
+}
+
+.card-body {
+    padding: 1em 0 1em 0;
+    text-align: center;
+}
+
+.nostalgia-card-section {
+    display: flex;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+/*
+    BLOGROLL
+*/
+.entry-meta {
+    margin-top: 2em;
+}
+
+/*
+    WIDGETS
+*/
+.nostalgia-sidebar {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-widget:last-child {
+    margin-top: auto;
+}
+
+.origami-widget-title {
+    text-shadow: 10px 10px 2px rgba(160, 201, 219, 0.25);
+    color: #a0c9db;
+}
+
+.nostalgia-search-modal {
+    background-color: #fff;
+    background-image: url('./assets/search-bg.webp');
+    background-repeat: no-repeat;
+    background-position-x: 0;
+    background-position-y: -100px;
+    background-size: cover;
+}
+
+.nostalgia-search-modal input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.textwidget p {
+    color: #ffffff;
+}
+
+#menu-service {
+    padding-left: 0;
+    margin-bottom: 6em;
+    margin-top: 3em;    
+}
+
+.btn-outline-dark, .btn-outline-dark:active, 
+.btn-outline-dark:focus, .btn:first-child:active,
+.btn:focus-visible {
+    background-color: #000;
+    text-transform: uppercase;
+    font-family: "Bodoni Moda", serif;
+    font-weight: 700;
+    color: #ccc;   
+    border-width: 2px;
+    border-radius: 0;
+    border-color: #7d2158;
+    clip-path: none;
+    font-style: unset;
+}
+
+.btn-outline-dark:hover {
+    background-color: #7d2158;
+    color: #000;
+    border-color: #000;
+}
+
+.wp-image-118{
+    box-shadow: 0 0 16px -1px #fff;
+    border-radius: 50%;    
+}
+
+/*
+    SITE MENU
+*/
+.nostalgia-nielsen-label {
+    display: none;
+}
+
+.navbar-container {
+    width: 100%;
+}
+
+
+
+/*
+  MEDIA QUERIES
+*/
+@media (max-width: 576px) {
+    body, p {
+        font-size: 1.2em;
+    }
+    .nostalgia-nielsen-label {
+        display: block;
+        font-size: 18px;
+        padding-right: 22px;
+        color: #fff;
+    }
+    .nostalgia-site-title-text {
+        left: 15%;
+    }
+    .nostalgia-nagel-wires {
+        width: 100%;
+    }
+    .nostalgia-entry-social {
+        float: inline-start;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+    .entry-meta span {
+        display: block;
+        text-align: right;
+        padding-right: 5px;
+    }
+   .navbar-container {
+        width: auto;
+        margin-top: 5px;
+    }
+    .navbar-nostalgia {
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        left: 0;
+        width: 100vw;
+        background-color: #7d2158;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        top: auto;
+        margin-bottom: -2px;
+    }
+    #menu-nostalgia {
+        padding-left: 0em;
+    }
+    .nostalgia-sidebar-container {
+        grid-template-rows: 1fr;
+    }
+    .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>");
+    }
+    .navbar-toggler {
+        border-color: #fff;
+    }
+    .offcanvas.offcanvas-start {
+        width: 80vw;
+        background-color: #7d2158; 
+    }
+    .offcanvas-header {
+        color: #ffffff;
+    }
+    .nostalgia-sidebar {
+        margin-bottom: 10em;
+    }
+    .social-link {
+        margin-right: 1.2em;
+    }
+    .textwidget p{
+        color: #ffffff;
+    }
+    .origami-widget-title {
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+    .origami-footer-widget:nth-last-of-type(1) p {
+        display: block;
+        font-size: 0.8em;
+    }
+    .btn-outline-dark, 
+    .btn-outline-dark:active, 
+    .btn-outline-dark:focus, 
+    .btn:first-child:active, 
+    .btn:focus-visible {
+        border-color: #a0c9db;
+    }
+    #text-3 p:nth-last-of-type(1) {
+        text-align: center;
+    }
+    #text-3 p:nth-last-of-type(1) a {
+        margin-left: 0.2em;
+    }
+    .origami-footer-widget i.fab {
+        font-size: 2em;
+    }
+    .nostalgia-section-title {
+        font-size: 2em;
+    }
+    .blogroll-title {
+        margin-bottom: 1em;
+    }
+    .nostalgia-entry-content, .entry-footer {
+        margin: 0;
+    } /* */
+    .nostalgia-card-section {
+        display: block; 
+        margin-top: 3em;
+       /*  grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px; */
+    }
+    .origami-stat-card {
+        max-width: 75%;
+    }
+    .stat-card-icona {
+        margin-right: 2em;
+    }
+    .origami-card-title {
+        font-size: 1.5em;
+        font-weight: 600;
+    }
+    .stat-data-container {
+        min-width: unset;
+    }
+    .stat-data-spec {
+        text-align: center;
+    }
+    .nostalgia-blogroll {
+        grid-template-columns: 1fr;
+    }
+    article.nostalgia-frontroll {
+        max-width: unset;
+        margin-left: 0;
+    } 
+    .nostalgia-frontroll-image img {
+        outline-offset: -18px;
+    }
+    .shodo-card {
+        max-width: unset;
+    }
+    .wp-image-118  {
+        margin-top: 3em;
+    }
+    #backToTop {
+        right: 45%;
+        border: 1px solid #fff;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .nostalgia-sidebar-container {
+        padding-left: 0;
+    }
+    .nostalgia-site-title-text {
+        font-size: 9em;
+        top: 5%;
+        left: 30%;
+    }
+    .nostalgia-letter {
+        display: block;
+    }
+    .menu-item {
+        text-transform: uppercase;
+        font-weight: 900;
+        font-size: 1em;
+        margin-top: 0;
+        border-bottom: 3px solid #b1b2b5;
+        transform: none;
+        width: 119px;
+    }
+    .navbar-nostalgia {
+        width: 16.6%;
+        position: sticky;
+        top: 5em;
+    }
+    .nostalgia-entry-content, .entry-footer {
+        margin: 0;
+    }
+    .nostalgia-card-section {
+        flex-wrap: wrap;
+    }
+    .nostalgia-sidebar {
+        overflow: hidden;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+    .btn-outline-dark, 
+    .btn-outline-dark:active, 
+    .btn-outline-dark:focus, 
+    .btn:first-child:active, 
+    .btn:focus-visible {
+        width: 114px;
+        word-wrap: break-word;
+        height: 77px;
+    }
+    #text-3 p:nth-last-of-type(1) {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 10px;
+        text-align: center;
+    }
+    .origami-footer-widget i.fab {
+        font-size: 2em;
+    }
+    .wp-image-118 {
+        width: 100px;
+        height: 100px;
+    }
+    figure {
+        border: 1px solid #000;
+    }
+    .nostalgia-frontroll-image img {
+        outline-offset: -19px;
+    }
+    .nostalgia-nagel-wires {
+        width: 78%;
+        height: 100em;
+        background-size: 1024px 1855px;
+    }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) {
+    .nostalgia-nagel-wires {
+        width: 78vw;
+        height: 150vw;
+        top: 18vh;
+    }
+    .nostalgia-card-section {
+        flex-wrap: wrap;
+    }    
+    .nostalgia-sidebar {
+        overflow: hidden;
+        padding-left: 2px;
+        padding-right: 2px;
+    }    
+    .wp-image-118 {
+        width: 100px;
+        height: 100px;
+    }
+    figure {
+        border: 1px solid #000;
+    }
+    .nostalgia-frontroll-image img {
+        outline-offset: -19px;
+    }
+    .btn-outline-dark, 
+    .btn-outline-dark:active, 
+    .btn-outline-dark:focus, 
+    .btn:first-child:active, 
+    .btn:focus-visible {
+        width: 114px;
+        word-wrap: break-word;
+        height: 77px;
+    }    
+    .nostalgia-site-title-text {
+        top: 13%;
+    }
+    .nostalgia-letter {
+        font-size: 0.8em;
+    }
+}

@@ -1,0 +1,615 @@
+/*
+    TODOS:
+    ok - body anti-flash white: #f0edee
+    ok - a, a:hover #4F5D7A (a soft, blue-gray), #7A4A4A (a dark, muted brown)
+    ok - il menu
+    ok - shodo-frontroll-title #2E2E2E (an extremely dark, almost black gray)
+    ok - origami-works-title
+    ok - .origami-stat-card i
+    ok - .origami-footer-widget i.fab #8B8B8B (a medium, grayish blue)
+    ok - .origami-tags-list li
+    ok - .origami-tags-list li:hover
+    - 
+*/
+/*
+    GENERAL STYLES
+*/
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5f5f5;
+    /* font-size: 1.2em; */
+}
+
+a {
+    color: #4F5D7A;
+}
+
+a:hover {
+    color: #7A4A4A;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #2E2E2E;
+}
+
+#page {
+    margin-top: 2em;
+}
+
+
+
+/*
+    SITE BRANDING
+*/
+.shodo-site-logo {
+    max-width: 92px;
+}
+
+.shodo-site-icon {
+    text-align: center;
+}
+
+.shodo-site-title {
+    text-align: center;
+    text-transform: lowercase;
+}
+
+.shodo-site-title h1 {
+    font-weight: 800;
+}
+
+
+/*
+    HEADINGS & TITLES
+*/
+.shodo-section-title, .shodo-entry-title {
+    text-transform: lowercase;
+    font-weight: 800;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    word-break: break-word;
+}
+
+.shodo-frontroll-title {
+    font-size: 0.9em;
+    word-wrap: break-word;
+    font-weight: 700;    
+}
+
+.shodo-hero {
+    margin-bottom: 2em;
+}
+
+/*
+    ACCESSINILITY
+*/
+.accessibility-controls {
+    min-width: 8em;
+}
+
+.shodo-entry-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.big-size {
+    font-size: 1.4em;
+}
+
+.bigger-size {
+    font-size: 1.6em;
+}
+
+.font-ctrl {
+    background-color: #FAF6F2;
+}
+
+.font-ctrl:hover {
+  color: #FAF6F2;
+  background-color: #000;  
+}
+
+.font-ctrl.magnified {
+  color: #FAF6F2;
+  background-color: #000;
+}
+
+/*
+    SITE MENU
+*/
+.shodo-nielsen-label {
+    display: none;
+}
+
+.navbar-shodo {
+    background-color: #FAF6F2;
+    max-width: 110px;
+    margin: 0px auto;
+    position: sticky;
+    top: 1px;
+    box-shadow: 5px 5px 11px rgba(122, 74, 74, 0.2);
+}
+
+ul#menu-shodo {
+    text-align: center;
+}
+
+a.nav-link, .nav-link>a {
+    font-size: 14px;
+    color: #4f5d7a;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+#menu-service {
+    padding-left: revert;
+}
+
+.current_page_item {
+    color: #2c1e3f;
+    background-color: rgba(122, 74, 74, 0.5);
+    border-radius: 25%;
+    text-shadow: none;
+}
+
+/* i::before {
+    background-color: transparent;
+} */
+
+a.nav-link:hover, 
+a.nav-link:hover i::before, 
+.nav-link>a:hover {
+    /* background-color: #7a4a4a;  rgba(122,74,74,0.2) #7a4a4a */
+    color: #7A4A4A;
+}
+
+a.nav-link i {
+    font-size: 36px;
+    display: block;
+}
+
+/* a.nav-link i:hover {
+    color: #8b8b8b;
+} */
+
+#sentinel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+#backToTop {
+    position: fixed;
+    background-color: #4f5d7a;
+    color: #FAF6F2;
+    font-size: 1.5em;
+    bottom: 20px;
+    right: 20px;
+    display: none; /* hidden on load */
+    z-index: 1030;
+}
+
+#backToTop:hover {
+    background-color: #7A4A4A;
+    color: #FAF6F2;
+}
+
+/*
+    FRONTROLL
+*/
+.shodo-frontroll {
+    box-shadow: 5px 5px 11px rgba(122, 74, 74, 0.2);
+    margin-bottom: 2em;    
+}
+
+.origami-tags-list li {
+    display: inline-block;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 5px;
+    padding: 5px 20px 5px 15px;
+    clip-path: none;
+    background-color: transparent;
+}
+
+.origami-tags-list li:hover {
+    background-color: transparent;
+    color: #7a4a4a;
+}
+
+.origami-tags-list li a {
+    color: #7a4a4a;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20%;
+}
+
+.origami-tags-list li a:hover, .origami-tags-list li:hover a {
+    color: #4f5d7a;
+    background-color: #c9c9c9;
+}
+
+.shodo-entry-content {
+    padding: 5px;
+}
+
+.shodo-entry-content a:hover, .entry-meta a:hover {
+    text-decoration: underline;
+}
+
+main {
+    margin-bottom: 10em;
+}
+
+/* main .shodo-entry-content {
+    font-size: 1.1em;
+} */
+
+.shodo-entry-meta {
+  float: inline-end;
+}
+
+.shodo-entry-social {
+  float: inline-start;
+  font-size: 2em;
+}
+
+.shodo-entry-social a:hover {
+    text-decoration: none;
+}
+
+.entry-meta span {
+    display: block;
+    text-align: right;
+    padding-right: 5px;
+    font-weight: 500;
+}
+
+.entry-footer {
+    padding-bottom: 1em;
+}
+
+/*
+    PORTFOLIO
+*/
+.shodo-portfolio {
+    margin-top: 2em;
+}
+
+.origami-works-container {
+    padding-top: 0;
+}
+
+
+.shodo-portfolio .card-group {
+    justify-content: space-evenly;
+}
+
+/*
+    STATS CARD
+*/
+.shodo-stats {
+    margin-top: 4em;
+}
+
+.shodo-card-section {
+    display: flex;
+    justify-content: center;
+}
+
+.origami-stat-card {
+    float: left;
+    max-width: 200px;
+    margin-right: 1em;
+}
+
+.origami-stat-card i {
+    color: #8b8b8b;
+}
+
+.stat-data-container{
+    width: 200px;
+}
+
+.stat-data-spec {
+    text-align: center;
+}
+
+/*
+    TEAM CARDS
+*/
+/* .shodo-team-card {
+    margin-top: 2em;
+} */
+
+.shodo-team-card {
+    margin-top: 4em;
+}
+
+/* .content-team {
+    margin-top: 1em;
+} */
+
+.content-team {
+    margin-top: 2em;
+}
+
+.card.shodo-card {
+    margin-top: 3em;
+    border-width: 0;
+    background-color: rgba(255, 255, 255, 0.2);
+    max-width: 200px;
+    box-shadow: 5px 5px 11px rgba(122, 74, 74, 0.2);
+}
+
+.shodo-card-container {
+    justify-content: space-evenly;
+}
+
+.origami-card-image {
+    border-radius: 0;
+    filter: sepia(100%);
+    clip-path: none;
+}
+
+.origami-card-title {
+    font-size: 1.1em;
+    font-weight: 700;
+}
+
+.origami-card-subtitle {
+    font-size: 1em;
+}
+
+.origami-card-title, .origami-card-subtitle, .origami-card-text {
+    text-align: center;
+}
+
+/*
+    WIDGETS
+*/
+.shodo-footer {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-widget {
+    box-shadow: 5px 5px 11px rgba(122, 74, 74, 0.2);
+    margin-bottom: 2em;
+    width: 100%;
+    max-width: 240px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-widget:last-child {
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+#text-3 p:nth-last-of-type(1) {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: none;
+    gap: 10px;
+    text-align: center;
+}
+
+.origami-footer-widget i.fab {
+    color: #4f5d7a;
+}
+
+.origami-footer-widget i.fab:hover {
+    color: #7A4A4A;
+}
+
+.origami-widget-title {
+    text-transform: lowercase;
+    font-style: normal;
+    text-shadow: none;
+}
+
+.shodo-search-modal {
+    background-color: #FAF6F2;
+    background-image: url('./assets/search-bg-mini.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 0px;
+    background-position-y: 50%;
+}
+
+.shodo-search-modal input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.textwidget {
+    padding-bottom: 2em;
+}
+
+.textwidget p {
+    width: unset;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.widget_nav_menu {
+    padding-top: 1em;
+    padding-bottom: 1em;    
+}
+
+.btn-outline-dark, .btn-outline-dark:active, 
+.btn-outline-dark:focus, .btn:first-child:active,
+.btn:focus-visible {
+    text-transform: uppercase;
+    color: #4f5d7a;
+    border-color: #4f5d7a;
+    font-size: 14px;
+    border-width: 2px;
+    font-weight: 700;
+    clip-path: none;
+    background-color: transparent;
+    font-style: unset;
+    margin-top: 1em;
+}
+
+.btn-outline-dark:hover {
+    color: #7A4A4A;
+    border-color: #7A4A4A;
+    background-color: rgba(122, 74, 74, 0.5);
+}
+
+/*
+  MEDIA QUERIES
+*/
+@media (max-width: 576px) {
+    #page {
+        margin-top: 1em;
+    }
+    .shodo-row {
+        margin-top: 6em;
+    }
+    .shodo-nielsen-label {
+        display: block;
+        font-size: 18px;
+        padding-right: 22px;
+    }
+    .shodo-entry-header {
+        display: block;
+    }
+    .shodo-entry-social {
+        float: inline-end;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+   .shodo-card-section {
+        flex-direction: column;
+        max-width: 50%;
+        margin: 0px auto;
+   } 
+   .card.shodo-card {
+        max-width: none;
+   }
+   .stat-data-numero {
+        margin-left: 1em;
+   }
+   .team-title {
+        margin-top: 2em;
+   }
+   .shodo-navigation {
+        display: grid;
+        grid-template-columns: 80px 80px;
+        width: 100%;
+        justify-content: space-between;
+        overflow: hidden;
+        position: fixed;
+        z-index: 1000;
+        background-color: #FAF6F2;
+        top: 0px;
+        left: 0px;
+        height: 90px;
+   }
+   .current_page_item {
+        border-radius: 5%;
+   }
+   .shodo-blogroll {
+        margin-top: 6em;
+   }
+   .shodo-footer {
+        margin-top: 3em;
+   }
+   .footer-widget {
+        max-width: unset;
+   }
+   #text-3 p:nth-last-of-type(1) {
+        width: unset;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+   #text-3 p:nth-last-of-type(1) a {
+        margin: 0px auto;
+    }
+   .shodo-site-title {
+        margin-bottom: 3em;
+   }
+   .navbar-toggler {
+        margin-top: 10px;
+   }
+}
+
+@media (min-width: 577px) {
+    /* ul#menu-shodo {
+        position: relative;
+    }
+    .current_page_item::before {
+        content: "";
+        position: absolute;
+        left: 6px;
+        top: 50%;
+        width: 12px;
+        height: 12px;
+        transform: translateY(-50%);
+        background: url("./assets/chevron-left.svg") no-repeat center/contain;        
+    } */
+}
+
+@media (min-width: 1601px) {
+    .shodo-main {
+        margin: 0px auto;
+    }
+}
+
+@media (min-width: 1023px) and (max-width: 1199px) {
+    .shodo-frontroll-title {
+        font-size: 0.9em;
+        word-wrap: break-word;
+    }
+    .shodo-navigation {
+        width: 12%;
+    }
+    .shodo-blogroll {
+        width: 12%;
+    }
+    .shodo-main {
+        max-width: 58%;
+    }
+    .wp-image-118 {
+        width: 90px;
+        height: 90px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .shodo-site-logo {
+        max-width: 70px;
+    }
+    .shodo-card-section {
+        flex-wrap: wrap;
+    }
+    .shodo-blogroll {
+        margin-top: 3em;
+    }
+    .card.shodo-card {
+        max-width: 150px;
+    }
+    .team-title {
+        margin-top: 2em;
+    }
+    .footer-widget {
+        margin-right: 0;
+    }
+    .origami-widget-title {
+        margin-bottom: 1em;
+    }
+
+}
+
